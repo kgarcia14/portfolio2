@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;  
 }
 
+.hidden {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -248,7 +252,7 @@ margin: 20px 0;
 
 .lets-connect {
     color: #3F3D56;
-    margin: 30px 0;
+    margin: 30px 0 15px 0;
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 3px;
@@ -266,7 +270,7 @@ input {
     border: none;
     border-radius: 5px;
     height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 textarea {
@@ -286,7 +290,7 @@ textarea {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1px;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .form-btn i {
