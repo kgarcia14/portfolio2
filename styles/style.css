@@ -81,13 +81,14 @@ nav {
 }
 
 .vector {
-    margin: 20px 0 5px 0;
+    margin: 40px 0 5px 0;
 }
 
 h1 {
     text-align: center;
     color: #fff;
     font-weight: 600;
+    font-size: 1.5rem;
     line-height: 1.6em;
     margin: 0 50px;
 }
@@ -97,18 +98,12 @@ h1 {
     border-radius: 8px;
     background-color: #3F3D56;
     color: #A5E653;
-    width: 180px;
+    width: 200px;
     height: 50px; 
     font-size: 1.2rem;
     font-weight: 500;
     margin: 20px 0 40px 0;
-}
-
-.down-arrow {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-}
+}   
 
 .skills-container {
     display: flex;
@@ -176,7 +171,6 @@ margin: 20px 0;
     flex-direction: column;
     align-items: center;
     margin: 0 7px 25px 7px;
-
 }
 
 .skill-icon label {
@@ -200,6 +194,7 @@ margin: 20px 0;
     flex-direction: column;
     align-items: center;
     margin: 35px 12px;
+    width: 90%;
 }
 
 .project-number {
@@ -232,8 +227,18 @@ margin: 20px 0;
 }
 
 .project-thumb {
-    width: 90%;
+    width: 100%;
     height: 175px;
+    border-radius: 10px;
+}
+
+.img-container {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -284,7 +289,7 @@ textarea {
     border: none;
     background-color: #3F3D56;
     color: #A5E653;
-    width: 170px;
+    width: 175px;
     height: 40px; 
     text-align: center;
     border-radius: 5px;
@@ -328,4 +333,40 @@ textarea {
     margin: 0 0 30px 0;
     padding: 0;
     font-size: 2rem;
+}
+
+
+@media screen and (min-width: 375px) {   
+    .vector {
+        margin: 50px 0 10px 0;
+    }
+    
+    h1 {
+        font-size: 1.9rem;
+        line-height: 1.6em;
+    }
+    
+    .see-work-btn {
+        width: 250px;
+    }   
+
+    .skill-icon {
+        margin: 0 14px 25px 14px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .skill-icon {
+        margin: 0 15px 25px 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    ul .navbar-nav{
+        justify-content: flex-start;
+    }
 }
