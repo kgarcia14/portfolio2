@@ -282,7 +282,7 @@ iframe {
 .project-links {
     color: #A5E653;
     font-size: .85rem;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .footer {
@@ -530,6 +530,11 @@ textarea {
     
     .img-container {
         width: 100%;
+    }
+
+    .github-code {
+        /* margin-left: 20px; */
+        text-align: center
     }
 }
 
@@ -783,7 +788,7 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
 
     }
     
@@ -791,6 +796,11 @@ textarea {
         width: 300px;
         height: 200px;
         border-radius: 10px;
+    }
+
+    .project-links-container {
+        width: 300px;
+        justify-content: center;
     }
 
     iframe {
@@ -831,7 +841,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 848px) {
     h1 {
         font-size: 2.8rem;
         margin-left: 50px;
