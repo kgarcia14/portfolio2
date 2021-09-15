@@ -361,6 +361,13 @@ textarea {
     margin-top: 25px;
 }
 
+@media screen and (min-width: 360px) {
+    h1 {
+        font-size: 1.9rem;
+        margin: 0 55px;
+    }
+}   
+
 @media screen and (min-width: 375px) {   
     .vector {
         margin: 50px 0 10px 0;
@@ -377,19 +384,6 @@ textarea {
 
     .skill-icon {
         margin: 0 14px 25px 14px;
-    }
-}
-
-@media screen and (min-width: 414px) {
-    .skill-icon {
-        margin: 0 15px 25px 15px;
-    }
-
-    h1 {
-        font-weight: 600;
-        font-size: 2rem;
-        line-height: 1.5em;
-        margin: 0 67px;
     }
 }
 
