@@ -119,6 +119,11 @@ h1 {
     margin: 20px 0 40px 0;
 }   
 
+.btn-link {
+    text-decoration: none;
+    color: #A5E653;
+}
+
 .skills-container {
     display: flex;
     flex-direction: column;
@@ -264,6 +269,20 @@ iframe {
     border-radius: 10px;
 }
 
+.project-links-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.project-links {
+    color: #A5E653;
+    font-size: .85rem;
+    margin: 0 5px;
+}
+
+
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -361,14 +380,16 @@ textarea {
     margin-top: 25px;
 }
 
+@media screen and (min-width: 360px) {
+    h1 {
+        font-size: 1.9rem;
+        margin: 0 75px;
+    }
+}   
+
 @media screen and (min-width: 375px) {   
     .vector {
         margin: 50px 0 10px 0;
-    }
-    
-    h1 {
-        font-size: 1.9rem;
-        margin: 0 55px;
     }
     
     .see-work-btn {
@@ -377,25 +398,6 @@ textarea {
 
     .skill-icon {
         margin: 0 14px 25px 14px;
-    }
-}
-
-@media screen and (min-width: 414px) {
-    .skill-icon {
-        margin: 0 15px 25px 15px;
-    }
-
-    h1 {
-        font-weight: 600;
-        font-size: 2rem;
-        line-height: 1.5em;
-        margin: 0 67px;
-    }
-}
-
-@media screen and (min-width: 468px) {
-    h1 {
-        margin: 0 45px;
     }
 }
 
@@ -710,6 +712,7 @@ textarea {
     .project-thumb-container {
         width: 50%;
         display: flex;
+        flex-direction: column;
         justify-content: flex-end;
         align-items: center;
 
@@ -725,7 +728,6 @@ textarea {
         width: 300px;
         height: 175px;
     }
-    
     
     .img-container {
         width: 100%;
