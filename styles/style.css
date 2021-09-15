@@ -462,6 +462,75 @@ textarea {
     .skills-description {
         font-size: .84rem;
     }
+
+    .projects-container {
+        background-color: #6A888C;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-wrapper {
+        flex-direction: row;
+    }
+
+    .project-content {
+        align-items: flex-start;
+        width: 50%;
+        padding-right: 25px;
+    }
+    
+    .project-number {
+        font-weight: 300;
+        font-size: .95rem;
+        margin: 0;
+    }
+    
+    .project-name {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    
+    .project-description {
+        text-align: left;
+        font-size: .95rem;
+    }
+
+    .technologies-used {
+        font-size: 1.1rem;
+    }
+    
+    .technologies {
+        text-align: left;
+        font-size: .95rem;
+    }
+
+    .project-thumb-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    
+    .project-thumb {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .img-container {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -667,7 +736,6 @@ textarea {
     }
 
     .projects-container {
-        background-color: #6A888C;
         margin-top: 15px;
         display: flex;
         flex-direction: column;
@@ -684,7 +752,6 @@ textarea {
     }
     
     .project-number {
-        color: #A5E653;
         font-weight: 300;
         font-size: .95rem;
         margin: 0;
@@ -728,7 +795,7 @@ textarea {
 
     iframe {
         width: 300px;
-        height: 175px;
+        height: 200px;
     }
     
     .img-container {
