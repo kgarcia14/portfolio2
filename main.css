@@ -553,6 +553,11 @@ textarea {
         margin: 0 111px;
     }
 
+    .skill-wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     .skills-description {
         font-size: .85rem;
     }
@@ -615,6 +620,11 @@ textarea {
 @media screen and (min-width: 708px) {
     h1 {
         margin: 0 166px;
+    }
+
+    .skill-wrapper {
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 
