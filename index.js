@@ -6,33 +6,30 @@ const scroll = new SmoothScroll('a[href*="#"]', {
     header: '[data-scroll-header]',
   });
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.web-dev', {
   scrollTrigger: {
     trigger: '.web-dev',
-    scrub: true,
   },
-  y: 100,
+  y: 200,
   opacity: 0,
   duration: 1.5,
-  scrub: true,
 })
 gsap.from('.res-des', {
   scrollTrigger: {
     trigger: '.res-des',
-    scrub: true,
   },
-  y: 100,
+  y: 200,
   opacity: 0,
   duration: 1.5,
 })
 gsap.from('.customer-service', {
   scrollTrigger: {
     trigger: '.customer-service',
-    scrub: true,
   },
-  y: 100,
+  y: 200,
   opacity: 0,
   duration: 1.5,
 })
