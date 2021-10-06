@@ -707,6 +707,7 @@ textarea {
         align-items: center;
         height: 60px;
         box-shadow: 0 8px 6px -7px #3f3d56;
+        z-index: 1;
     }
 
     .social-list {
