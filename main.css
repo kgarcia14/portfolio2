@@ -145,6 +145,9 @@ h1 {
     width: 90%;
     height: 425px;
     border-radius: 20px;
+    
+    top: 0;
+    transition: top ease-in-out 0.5s;
 }
 
 .web-dev {
