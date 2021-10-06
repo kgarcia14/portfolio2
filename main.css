@@ -85,11 +85,12 @@ nav {
 }
 
 .hero {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #6A888C;
-    margin-top: 60px;
 }
 
 .hero-content {
@@ -99,7 +100,7 @@ nav {
 }
 
 .vector {
-    margin: 40px 0 5px 0;
+    margin: 80px 0 5px 0;
 }
 
 h1 {
