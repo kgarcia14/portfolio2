@@ -658,6 +658,10 @@ textarea {
         width: 65%;
     }
 
+    .offcanvas-backdrop {
+        display: none !important;
+    }
+
     .navbar-light .navbar-brand {
         margin-left: 60px;
     }
