@@ -26,6 +26,10 @@ li {
     list-style-type: none;
 }
 
+.desk-nav-container {
+    display: none;
+}
+
 .offcanvas-backdrop.show {
     opacity: .8;
 }
@@ -652,14 +656,33 @@ textarea {
         padding: 0 20px;
     }
 }
+@media screen and (min-width: 753px) {
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .desk-nav-container{
+        display: initial;
+        height: 100%;
+    }
+
+    .desk-nav-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+    }
+
+    .desk-nav-item {
+        color: #fff;
+    }
+}
 
 @media screen and (min-width: 768px) {
     nav {
         width: 65%;
-    }
-
-    .offcanvas-backdrop {
-        display: none !important;
     }
 
     .navbar-light .navbar-brand {
@@ -898,6 +921,4 @@ textarea {
     .navbar-light .navbar-brand {
         margin-left: 110px;
     }
-
-    .social-nav {}
 }
