@@ -326,12 +326,16 @@ input {
     border-radius: 5px;
     height: 40px;
     margin-bottom: 15px;
+    padding-left: 10px;
+    outline-color:#6100FF;
 }
 
 textarea {
     border: none;
     border-radius: 5px;
     height: 100px;
+    padding-left: 10px;
+    outline-color:#6100FF;
 }
 
 .form-btn {
