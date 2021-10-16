@@ -79,6 +79,9 @@ h1 {
 }
 
 .hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background-color: #6100FF;
     width: 140px;
@@ -391,13 +394,6 @@ textarea {
 
 @media screen and (min-width: 360px) {
     h1 {
-        font-size: 1.6rem;
-        transition: .3s;
-    }
-}
-
-@media screen and (min-width: 375px) {
-    h1 {
         font-size: 1.8rem;
         transition: .3s;
     }
@@ -407,7 +403,7 @@ textarea {
         height: 38px;
         transition: .3s;
     }
-    
+
     .hero-btn-text {
         color: #fff;
         font-size: 1.1rem;
