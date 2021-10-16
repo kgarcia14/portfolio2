@@ -394,23 +394,16 @@ textarea {
 
 @media screen and (min-width: 360px) {
     h1 {
-        font-size: 1.6rem;
-        transition: .3s;
-    }
-}
-
-@media screen and (min-width: 375px) {
-    h1 {
         font-size: 1.8rem;
         transition: .3s;
     }
 
     .hero-btn {
         width: 160px;
-        height: 38px;
+        height: 35px;
         transition: .3s;
     }
-    
+
     .hero-btn-text {
         color: #fff;
         font-size: 1.1rem;
