@@ -435,6 +435,14 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+    .navbar-brand {
+        margin-left: 60px;
+    }
+    
+    .navbar-burger {
+        margin-right: 60px;
+    }
+
     .hero {
         overflow: hidden;
         height: 400px;
@@ -552,6 +560,10 @@ textarea {
 
 @media screen and (min-width: 1024px) {
 
+    .navbar-brand {
+        margin-left: 150px;
+    }
+
     .hero {
         width: 100%;
         height: 450px;
@@ -583,6 +595,10 @@ textarea {
 }
 
 @media screen and (min-width: 1366px) and (orientation: landscape) {
+    .navbar-brand {
+        margin-left: 250px;
+    }
+
     .hero {
         width: 100%;
         height: 600px;
@@ -595,6 +611,7 @@ textarea {
         transition: .3s;
         margin-left: 250px;
         padding-right: 450px;
+        max-width: 1500px;
     }
 
     .hero-btn {
