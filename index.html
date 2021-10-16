@@ -53,99 +53,76 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="#">Home</a>
-          <a class="navbar-item services" href="#skills">Skills</a>
-          <a class="navbar-item products" href="#projects">Projects</a>
-          <a class="navbar-item contact" href="#contact">Contact</a>
+          <a class="navbar-item nav-home" href="#">Home</a>
+          <a class="navbar-item nav-skills" href="#skills">Skills</a>
+          <a class="navbar-item nav-projects" href="#projects">Projects</a>
+          <a class="navbar-item nav-contact" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
 
-    <div class="social-nav">
-      <ul class="social-list">
-        <li>
-          <a href="https://www.linkedin.com/in/kurtis-garcia" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/kgarcia14" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="mailto:kurtisgarcia14@gmail.com" target="_blank"
-            ><i class="fas fa-envelope"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
 
-    <div class="hero">
-      <div class="hero-content">
-        <h1>
-          I <span class="purple-span">design</span> and
-          <span class="purple-span">develop</span> websites and apps that
-          simplify the user experience.
-        </h1>
+    
+      <div class="hero">
+        <div class="hero-content">
+          <h1>
+            I <span class="purple-span">design</span> and
+            <span class="purple-span">develop</span> websites and apps that
+            simplify the user experience.
+          </h1>
+        </div>
+        <button class="hero-btn" type="button">
+          <a class="hero-btn-text" href="#projects">See my work</a>
+        </button>
       </div>
-      <button class="hero-btn" type="button">
-        <a class="hero-btn-text" href="#projects">See my work</a>
-      </button>
-    </div>
+      <img class="bezier bezier-dark" src="images/bezier-dark.png" alt="">
     <div id="skills" class="skills-container">
-      <div class="custom-shape-divider-top-1634358060">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-      <div
-        class="skill-wrapper web-dev"
-        
-      >
-        <img class="skills-img" src="images/coding.svg" alt="code tag" />
-        <h3 class="skills-title">Web Development</h3>
-        <p class="skills-description">
-          Well versed in modern day web development. I design and update
-          websites and online applications using various technologies and design
-          tools.
-        </p>
-      </div>
-      <div
-        class="skill-wrapper res-des"
-        
-      >
-        <img
-          class="skills-img"
-          src="images//monitor-tablet-and-smartohone.svg"
-          alt="computer,tablet, and phone"
-        />
-        <h3 class="skills-title">Responsive design</h3>
-        <p class="skills-description">
-          Understanding the importance of responsive design this day in age, I
-          make it a priority to ensure a seamless user experience in every
-          project.
-        </p>
-      </div>
-      <div
-        class="skill-wrapper customer-service"
-        
-      >
-        <img class="skills-img" src="images/customer.svg" alt="code tag" />
-        <h3 class="skills-title">Customer Service</h3>
-        <p class="skills-description">
-          With a lifetime of customer service under my belt, I am able to help
-          clients feel appreciated and let them know that I care about their
-          needs being met.
-        </p>
+        <div class="skills-section">
+        <!-- SLANTED SKILL CONTAINER -->
+        <!-- <div class="custom-shape-divider-top-1634358060">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div> -->
+        <div class="skill-wrapper web-dev">
+          <img class="skills-img" src="images/coding.svg" alt="code tag" />
+          <h3 class="skills-title">Web Development</h3>
+          <p class="skills-description">
+            Well versed in modern day web development. I design and update
+            websites and online applications using various technologies and design
+            tools.
+          </p>
+        </div>
+        <div class="skill-wrapper res-des">
+          <img
+            class="skills-img"
+            src="images//monitor-tablet-and-smartohone.svg"
+            alt="computer,tablet, and phone"
+          />
+          <h3 class="skills-title">Responsive design</h3>
+          <p class="skills-description">
+            Understanding the importance of responsive design this day in age, I
+            make it a priority to ensure a seamless user experience in every
+            project.
+          </p>
+        </div>
+        <div class="skill-wrapper customer-service">
+          <img class="skills-img" src="images/customer.svg" alt="code tag" />
+          <h3 class="skills-title">Customer Service</h3>
+          <p class="skills-description">
+            With a lifetime of customer service under my belt, I am able to help
+            clients feel appreciated and let them know that I care about their
+            needs being met.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -211,10 +188,7 @@
     </div>
 
     <div id="projects" class="projects-container">
-      <div
-        class="project-wrapper"
-        
-      >
+      <div class="project-wrapper">
         <div class="project-content">
           <h5 class="project-number">Project 1</h5>
           <h4 class="project-name">CocktailHour</h4>
