@@ -33,6 +33,3 @@ const scroll = new SmoothScroll('a[href*="#"]', {
     speedAsDuration: true,
     header: '[data-scroll-header]',
   });
-
-  
-AOS.init();
