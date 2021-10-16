@@ -113,7 +113,31 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
+
+.custom-shape-divider-top-1634357081 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1634357081 svg {
+    position: relative;
+    display: block;
+    width: calc(170% + 1.3px);
+    height: 101px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1634357081 .shape-fill {
+    fill: #FFFFFF;
+}
+
 
 
 .skill-wrapper {
@@ -122,6 +146,10 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 90%;
+}
+
+.web-dev {
+    margin-top: 100px;
 }
 
 .res-des {
