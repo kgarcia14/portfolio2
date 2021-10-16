@@ -398,19 +398,19 @@ textarea {
 
 @media screen and (min-width: 375px) {
     h1 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         transition: .3s;
     }
 
     .hero-btn {
-        width: 150px;
-        height: 35px;
+        width: 160px;
+        height: 38px;
         transition: .3s;
     }
     
     .hero-btn-text {
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.1rem;
         transition: .3s;
     }
 }
