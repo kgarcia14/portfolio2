@@ -14,10 +14,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.hidden {
-    display: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -58,7 +54,7 @@ i {
 
 .hero {
     overflow: hidden;
-    height: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +94,8 @@ h1 {
 
 .bezier {
     width: 100%;
-    display: block;
-    margin-bottom: -.5px;
+    margin-top: -50px;
+    margin-bottom: -8px;
 }
 
 .skills-container {
@@ -111,7 +107,8 @@ h1 {
     position: relative;
 }
 
-.custom-shape-divider-top-1634358060 {
+/* SLANTED SKILL CONTAINER DIV */
+/* .custom-shape-divider-top-1634358060 {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,7 +126,7 @@ h1 {
 
 .custom-shape-divider-top-1634358060 .shape-fill {
     fill: #FFFFFF;
-}
+} */
 
 
 
@@ -138,11 +135,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
-}
-
-.web-dev {
-    margin-top: 100px;
+    width: 280px;
 }
 
 .res-des {
@@ -154,21 +147,22 @@ margin: 40px 0;
 }
 
 .skills-img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .skills-title {
     color: #3F3D56;
     font-weight: 600;
-    font-size: 1.3rem;
-    margin: 15px 0;
+    font-size: 1.1rem;
+    margin: 10px 0;
     color: #fff;
 }
 
 .skills-description {
     color: #3F3D56;
     font-weight: 200;
+    font-size: .9rem;
     text-align: center;
     margin: 0 12px;
     color: #fff;
@@ -191,15 +185,16 @@ margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 7px 25px 7px;
+    margin: 0 10px 25px 10px;
 }
 
 .skill-icon label {
+    font-size: 1rem;
     color: #B0A8B9;
 }
 
 .skill-icon i {
-    font-size: 2.7rem;
+    font-size: 2rem;
 }
 
 .projects-container {
@@ -420,6 +415,7 @@ textarea {
     h1 {
         font-size: 1.9rem;
         transition: .3s;
+        max-width: 582px;
     }
 
     .hero-btn {
@@ -429,7 +425,6 @@ textarea {
     }
     
     .hero-btn-text {
-        color: #fff;
         font-size: 1rem;
         transition: .3s;
     }
@@ -437,57 +432,187 @@ textarea {
 
 @media screen and (min-width: 768px) {
     .hero {
-        width: 100%;
         overflow: hidden;
-        height: 250px;
+        height: 400px;
         align-items: flex-start;
         justify-content: center;
     }
 
     h1 {
-        width: 100%;
         text-align: left;
-        font-size: 2.3rem;
+        font-size: 2.8rem;
         transition: .3s;
-        margin-left: 50px;
-        padding-right: 220px;
+        margin-left: 60px;
+        padding-right: 100px;
+        max-width: 769px;
     }
 
     .hero-btn {
-        margin-left: 50px;
+        margin-left: 60px;
+        width: 200px;
+        height: 40px;
     }
     
     .hero-btn-text {
-        color: #fff;
-        font-size: 1rem;
-        transition: .3s;
+        font-size: 1.2rem;
+    }
+
+    .bezier {
+        margin-top: -100px;
     }
 
     .skills-container {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .skill-wrapper {
-        width: 35%;
-    }
 
-    .web-dev {
-        margin: 50px 0 0 0;
-    }
-
-    .res-des {
-        margin: 80px 0 0 0;
+    .skills-section {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1200px;
     }
 
     .res-des {
-        margin: 80px 0 0 0;
+        margin: 0;
     }
 
     .customer-service {
-        margin: 80px 0 0 0;
+        margin: 0;
     }
 
     .skill-group-1 {
         margin-top: 50px;
+    }
+
+    .project-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 1200px;
+    }
+
+    .project-content {
+        align-items: flex-start;
+        width: 50%;
+        max-width: 400px;
+    }
+
+    .project-description {
+        text-align: left;
+    }
+
+    .technologies {
+        text-align: left;
+    }
+
+    .project-thumb-container {
+        width: 300px;
+    }
+
+    .footer {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .contact-form {
+        margin-top: -50px;
+        margin-bottom: 50px;
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .resume-and-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .resume {
+        font-size: 1.5rem;
+    }
+
+    .footer-social-list {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .footer-social-list li i{
+        font-size: 2.3rem;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hero {
+        width: 100%;
+        height: 450px;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 3.2rem;
+        transition: .3s;
+        margin-left: 150px;
+        padding-right: 275px;
+        max-width: 1041px;
+    }
+
+    .hero-btn {
+        margin-left: 150px;
+        width: 200px;
+        height: 45px;
+    }
+    
+    .hero-btn-text {
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1366px) and (orientation: landscape) {
+    .hero {
+        width: 100%;
+        height: 600px;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 4rem;
+        transition: .3s;
+        margin-left: 250px;
+        padding-right: 450px;
+    }
+
+    .hero-btn {
+        margin-left: 250px;
+        width: 250px;
+        height: 60px;
+    }
+
+    .hero-btn-text {
+        font-size: 1.5rem;
+    }
+
+    .skills-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .skills-title {
+        font-size: 1.3rem;
+    }
+    
+    .skills-description {
+        font-size: 1rem;
     }
 }
