@@ -334,7 +334,7 @@ textarea {
     border: none;
     border-radius: 5px;
     height: 100px;
-    padding-left: 10px;
+    padding: 10px;
     outline-color:#6100FF;
 }
 
