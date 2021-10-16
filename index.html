@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,12 +11,7 @@
     <meta property="og:image" content="images/hero.png" />
     <meta property="og:description" content="Check out my work." />
     <title>Kurtis' Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -30,89 +25,27 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
-    <nav
-      data-scroll-header
-      class="navbar navbar-light navbar-expand-md fixed-top"
-    >
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand">Kurtis Garcia</a>
-        <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <body class="has-navbar-fixed-top">
+    <nav data-scroll-header class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+          <a class="logo" href="/">Kurtis Garcia</a>
 
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="desk-nav-container">
-            <ul class="desk-nav-wrapper">
-              <li><a class="desk-nav-item" href="#">Home</li>
-              <li><a class="desk-nav-item" href="#skills">Skills</li>
-              <li><a class="desk-nav-item" href="#projects">projects</li>
-              <li><a class="desk-nav-item" href="#contact">Contact</li>
-            </ul>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  href="#"
-                  class="nav-link"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#skills"
-                  class="nav-link"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#projects"
-                  class="nav-link"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#contact"
-                  class="nav-link"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-            
-          </div>
-        </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
       </div>
-    </nav>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+              <a class="navbar-item" href="#">Home</a>
+              <a class="navbar-item services"href="#skills">Skills</a>
+              <a class="navbar-item products"href="#projects">Projects</a>
+              <a class="navbar-item contact" href="#contact">Contact</a>
+          </div>
+      </div>
+  </nav>
 
     <div class="social-nav">
       <ul class="social-list">
@@ -135,17 +68,14 @@
     </div>
 
     <div class="hero">
-      <div class="vector">
-        <img class="vector-img" src="images/vector.svg" alt="illustration" />
-      </div>
       <div class="hero-content">
-        <h1>Transforming Beautiful Designs Into Clean Code.</h1>
-        <button class="see-work-btn">
-          <a href="#projects" class="btn-link">See My Work</a>
-        </button>
+        <h1>I <span class="purple-span">design</span> and <span class="purple-span">develop</span> websites and apps that simplify the user experience.</h1>
       </div>
+      <button class="hero-btn" type="button">
+        <a class="hero-btn-text" href="#projects">See my work</a>
+      </button>
     </div>
-
+    <img class="bezier" src="images/bezier-dark.png" alt="">
     <div id="skills" class="skills-container">
       <div
         class="skill-wrapper web-dev"
@@ -516,6 +446,7 @@
       </div>
     </div>
 
+    <img class="bezier" src="images/bezier-light.png" alt="">
     <div id="contact" class="footer">
       <form
         class="contact-form"
@@ -561,17 +492,17 @@
               <a
                 href="https://www.linkedin.com/in/kurtis-garcia"
                 target="_blank"
-                ><i class="fab fa-linkedin"></i
+                ><i class="fab fa-linkedin footer-social-link"></i
               ></a>
             </li>
             <li>
               <a href="https://github.com/kgarcia14" target="_blank"
-                ><i class="fab fa-github"></i
+                ><i class="fab fa-github footer-social-link"></i
               ></a>
             </li>
             <li>
               <a href="mailto:kurtisgarcia14@gmail.com" target="_blank"
-                ><i class="fas fa-envelope"></i
+                ><i class="fas fa-envelope footer-social-link"></i
               ></a>
             </li>
           </ul>
