@@ -12,8 +12,10 @@
     <meta property="og:description" content="Check out my work." />
     <title>Kurtis' Portfolio</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -28,35 +30,70 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body class="has-navbar-fixed-top">
+
+  <body>
     <nav
       data-scroll-header
-      class="navbar is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
+      class="navbar navbar-light navbar-expand-sm fixed-top"
     >
-      <div class="navbar-brand">
-        <a class="logo" href="/">Kurtis Garcia</a>
-
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Kurtis Garcia</a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item nav-home" href="#">Home</a>
-          <a class="navbar-item nav-skills" href="#skills">Skills</a>
-          <a class="navbar-item nav-projects" href="#projects">Projects</a>
-          <a class="navbar-item nav-contact" href="#contact">Contact</a>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a
+                  href="#"
+                  class="nav-link"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a
+                  href="#skills"
+                  class="nav-link"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a
+                  href="#projects"
+                  class="nav-link"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a
+                  href="#contact"
+                  class="nav-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -476,10 +513,10 @@
     </div>
   </body>
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="index.js"></script>
