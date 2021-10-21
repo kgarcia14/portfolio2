@@ -35,21 +35,36 @@ i {
     font-size: 20px;
 }
 
-.navbar-brand {
-    align-items: center;
-    margin-left: 15px;
+nav {
+    background-color: #ffffff;
+    height: 60px;
 }
 
-.logo {
-    color: #4B4453;
+.navbar-light .navbar-brand {
+    margin-left: 25px;
+    padding: 0;
+    color: rgb(75, 68, 83);
+    font-size: 1.1rem;
 }
 
-.navbar-burger, .navbar-burger span {
-    color: #4B4453;
+.navbar-light .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-right: 25px;
 }
 
-.navbar-item {
-    font-size: .8rem;
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(75, 68, 83, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+}
+
+.offcanvas-body {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .social-nav {
@@ -63,6 +78,7 @@ i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 h1 {
@@ -431,6 +447,17 @@ textarea {
     .hero-btn-text {
         font-size: 1rem;
         transition: .3s;
+    }
+}
+
+@media screen and (min-width: 561px) {
+    .nav-link {
+        font-size: .9rem;
+    }
+    
+    .container-fluid {
+        padding: 0;
+        max-width: 1200px;
     }
 }
 
