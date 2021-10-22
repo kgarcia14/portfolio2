@@ -275,12 +275,16 @@ margin: 40px 0;
 
 .project-thumb-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-thumb {
     width: 100%;
     height: 200px;
     border-radius: 10px;
+    max-width: 350px;
 }
 
 .img-container {
@@ -291,6 +295,7 @@ iframe {
     width: 100%;
     height: 200px;
     border-radius: 10px;
+    max-width: 350px;
 }
 
 .project-links-container {
@@ -302,7 +307,7 @@ iframe {
 .project-links {
     color: #6100FF;
     font-size: .85rem;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .footer {
