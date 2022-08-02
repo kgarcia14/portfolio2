@@ -204,6 +204,10 @@ margin: 40px 0;
     flex-wrap: wrap;
 }
 
+.skill-group-2 {
+    margin-bottom: 15px;
+}
+
 .skill-icon {
     display: flex;
     flex-direction: column;
@@ -462,7 +466,7 @@ textarea {
     
     .container-fluid {
         padding: 0;
-        max-width: 1200px;
+        max-width: 950px;
     }
 }
 
